@@ -1,0 +1,39 @@
+#buttons-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 1px;
+  font-size: 18px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+}
+
+#select-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: lightblue;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#warList {
+  display: none;
+}
+
+.selected {
+  background-color: rgb(177, 164, 255);
+}
+
+.incorrect {
+  background-color: rgb(255, 0, 0);
+}
+
+.correct {
+  background-color: rgb(35, 129, 16);
+}

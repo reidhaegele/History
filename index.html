@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>War Guessing Game</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div id="buttons-container">
+    <button id="button-1">Before 1800</button>
+    <button id="button-2">After 1800</button>
+    <!-- <button id="button-3">Button 3</button>
+      <button id="button-4">Button 4</button> -->
+  </div>
+  <button id="select-button">Select</button>
+
+  <div>
+    <select id="warList" size="137">
+      <option value="1300trojan-war">Trojan War</option>
+      <option value="1200trojan-war">Trojan War</option>
+      <option value="800first-messenian-war">First Messenian War</option>
+      <option value="800lelantine-war">Lelantine War</option>
+      <option value="700lelantine-war">Lelantine War</option>
+      <option value="700second-messenian-war">Second Messenian War</option>
+      <option value="500greco-persian-wars">Greco-Persian Wars</option>
+      <option value="500peloponnesian-war">Peloponnesian War</option>
+      <option value="400lamian-war">Lamian War</option>
+      <option value="300first-punic-war">First Punic War</option>
+      <option value="300second-punic-war">Second Punic War</option>
+      <option value="200third-punic-war">Third Punic War</option>
+      <option value="100 BCEgallic-wars">Gallic Wars</option>
+      <option value="600jinshin-no-ran">Jinshin-no-ran</option>
+      <option value="1000norman-conquest">Norman Conquest</option>
+      <option value="1000crusades">Crusades</option>
+      <option value="1000gempei-war">Gempei War</option>
+      <option value="1000barons-war">Barons' War</option>
+      <option value="1300hundred-years-war">Hundred Years' War</option>
+      <option value="1300war-of-the-eight-saints">War of the Eight Saints</option>
+      <option value="1400hundred-years-war">Hundred Years' War</option>
+      <option value="1400thirteen-years-war">Thirteen Years' War</option>
+      <option value="1400wars-of-the-roses">Wars of the Roses</option>
+      <option value="1400onin-war">Onin War</option>
+      <option value="1500counts-war">Count's War</option>
+      <option value="1500araucanian-wars">Araucanian Wars</option>
+      <option value="1500livonian-war">Livonian War</option>
+      <option value="1500eighty-years-war">Eighty Years' War</option>
+      <option value="1500war-of-the-three-henrys">War of the Three Henrys</option>
+      <option value="1600eighty-years-war">Eighty Years' War</option>
+      <option value="1600kalmar-war">Kalmar War</option>
+      <option value="1600thirty-years-war">Thirty Years' War</option>
+      <option value="1600powhatan-war">Powhatan War</option>
+      <option value="1600bishops-wars">Bishops' Wars</option>
+      <option value="1600english-civil-wars">English Civil Wars</option>
+      <option value="1600first-northern-war">First Northern War</option>
+      <option value="1600war-of-devolution">War of Devolution</option>
+      <option value="1600king-philips-war">King Philip's War</option>
+      <option value="1600war-of-the-grand-alliance">War of the Grand Alliance</option>
+      <option value="1600king-williams-war">King William's War</option>
+      <option value="1700second-northern-war">Second Northern War</option>
+      <option value="1700war-of-the-spanish-succession">War of the Spanish Succession</option>
+      <option value="1700war-of-the-emboabas">War of the Emboabas</option>
+      <option value="1700carnatic-wars">Carnatic Wars</option>
+      <option value="1700queen-annes-war">Queen Anne's War</option>
+      <option value="1700yamasee-war">Yamasee War</option>
+      <option value="1700war-of-the-polish-succession">War of the Polish Succession</option>
+      <option value="1700war-of-jenkins-ear">War of Jenkins' Ear</option>
+      <option value="1700war-of-the-austrian-succession">War of the Austrian Succession</option>
+      <option value="1700king-georges-war">King George's War</option>
+      <option value="1700french-and-indian-war">French and Indian War</option>
+      <option value="1700silesian-wars">Silesian Wars</option>
+      <option value="1700seven-years-war">Seven Years' War</option>
+      <option value="1700lord-dunmores-war">Lord Dunmore's War</option>
+      <option value="1700rohilla-war">Rohilla War</option>
+      <option value="1700american-revolution">American Revolution</option>
+      <option value="1700first-maratha-war">First Maratha War</option>
+      <option value="1700war-of-the-bavarian-succession">War of the Bavarian Succession</option>
+      <option value="1700cape-frontier-wars">Cape Frontier Wars</option>
+      <option value="1700french-revolution">French Revolution</option>
+      <option value="1700french-revolutionary-wars">French revolutionary wars</option>
+      <option value="1800cape-frontier-wars">Cape Frontier Wars</option>
+      <option value="1800french-revolutionary-wars">French revolutionary wars</option>
+      <option value="1800war-of-the-oranges">War of the Oranges</option>
+      <option value="1800tripolitan-war">Tripolitan War</option>
+      <option value="1800second-maratha-war">Second Maratha War</option>
+      <option value="1800third-maratha-war">Third Maratha War</option>
+      <option value="1800napoleonic-wars">Napoleonic Wars</option>
+      <option value="1800black-war">Black War</option>
+      <option value="1800peninsular-war">Peninsular War</option>
+      <option value="1800war-of-1812">War of 1812</option>
+      <option value="1800creek-war">Creek War</option>
+      <option value="1800war-of-greek-independence">War of Greek Independence</option>
+      <option value="1800padri-war">Padri War</option>
+      <option value="1800naning-war">Naning War</option>
+      <option value="1800pastry-war">Pastry War</option>
+      <option value="1800mexican-american-war">Mexican-American War</option>
+      <option value="1800crimean-war">Crimean War</option>
+      <option value="1800bleeding-kansas">Bleeding Kansas</option>
+      <option value="1800american-civil-war">American Civil War</option>
+      <option value="1800war-of-the-triple-alliance">War of the Triple Alliance</option>
+      <option value="1800seven-weeks-war">Seven Weeks' War</option>
+      <option value="1800selangor-civil-war">Selangor Civil War</option>
+      <option value="1800franco-german-war">Franco-German War</option>
+      <option value="1800acehnese-war">Acehnese War</option>
+      <option value="1800red-river-indian-war">Red River Indian War</option>
+      <option value="1800serbo-turkish-war">Serbo-Turkish War</option>
+      <option value="1800anglo-zulu-war">Anglo-Zulu War</option>
+      <option value="1800war-of-the-pacific">War of the Pacific</option>
+      <option value="1800gun-war">Gun War</option>
+      <option value="1800sino-french-war">Sino-French War</option>
+      <option value="1800serbo-bulgarian-war">Serbo-Bulgarian War</option>
+      <option value="1800sino-japanese-war">Sino-Japanese War</option>
+      <option value="1800spanish-american-war">Spanish-American War</option>
+      <option value="1800philippine-american-war">Philippine-American War</option>
+      <option value="1800south-african-war">South African War</option>
+      <option value="1800the-war-of-a-thousand-days">The War of a Thousand Days</option>
+      <option value="1900acehnese-war">Acehnese War</option>
+      <option value="1900philippine-american-war">Philippine-American War</option>
+      <option value="1900south-african-war">South African War</option>
+      <option value="1900the-war-of-a-thousand-days">The War of a Thousand Days</option>
+      <option value="1900boxer-rebellion">Boxer Rebellion</option>
+      <option value="1900moro-wars">Moro Wars</option>
+      <option value="1900russo-japanese-war">Russo-Japanese War</option>
+      <option value="1900pig-war">Pig War</option>
+      <option value="1900mexican-revolution">Mexican Revolution</option>
+      <option value="1900italo-turkish-war">Italo-Turkish War</option>
+      <option value="1900world-war-i">World War I</option>
+      <option value="1900baltic-war-of-liberation">Baltic War of Liberation</option>
+      <option value="1900russian-civil-war">Russian Civil War</option>
+      <option value="1900russo-polish-war">Russo-Polish War</option>
+      <option value="1900rif-war">Rif War</option>
+      <option value="1900chaco-war">Chaco War</option>
+      <option value="1900italo-ethiopian-war">Italo-Ethiopian War</option>
+      <option value="1900spanish-civil-war">Spanish Civil War</option>
+      <option value="1900sino-japanese-war">Sino-Japanese War</option>
+      <option value="1900phony-war">Phony War</option>
+      <option value="1900russo-finnish-war">Russo-Finnish War</option>
+      <option value="1900world-war-ii">World War II</option>
+      <option value="1900greek-civil-war">Greek Civil War</option>
+      <option value="1900arab-israeli-wars">Arab-Israeli wars</option>
+      <option value="1900korean-war">Korean War</option>
+      <option value="1900algerian-war">Algerian War</option>
+      <option value="1900vietnam-war">Vietnam War</option>
+      <option value="1900six-day-war">Six-Day War</option>
+      <option value="1900war-of-attrition">War of Attrition</option>
+      <option value="1900yom-kippur-war">Yom Kippur War</option>
+      <option value="1900dirty-war">Dirty War</option>
+      <option value="1900afghan-war">Afghan War</option>
+      <option value="1900iran-iraq-war">Iran-Iraq War</option>
+      <option value="1900falkland-islands-war">Falkland Islands War</option>
+      <option value="1900persian-gulf-war">Persian Gulf War</option>
+      <option value="1900bosnian-conflict">Bosnian conflict</option>
+      <option value="1900kosovo-conflict">Kosovo conflict</option>
+      <option value="2000afghanistan-war">Afghanistan War</option>
+      <option value="2000iraq-war">Iraq War</option>
+      <option value="2000syrian-civil-war">Syrian Civil War</option>
+    </select>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
